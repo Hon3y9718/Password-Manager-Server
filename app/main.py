@@ -1,6 +1,6 @@
 from flask import Flask, json
 
-from Db import FirestoreDB
+from app.Db import FirestoreDB
 
 app = Flask(__name__)
 
