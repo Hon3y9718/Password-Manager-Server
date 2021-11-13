@@ -3,7 +3,7 @@ from firebase_admin import credentials, firestore
 
 class FirestoreDB():
     def __init__(self):
-        cred = credentials.Certificate('./passwordmanager-b5607-firebase-adminsdk-xe29w-7231e1607a.json')
+        cred = credentials.Certificate('app\passwordmanager-b5607-firebase-adminsdk-xe29w-7231e1607a.json')
         default_App = firebase_admin.initialize_app(cred)
         self.db = firestore.client()
 
